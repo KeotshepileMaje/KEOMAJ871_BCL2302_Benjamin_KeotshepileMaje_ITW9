@@ -1,0 +1,267 @@
+:root {
+    --color1: rgb(25, 28, 37);
+    --color2: rgb(43, 43, 43);
+    --color3: rgb(145, 183, 183);
+    --color4:   ;
+    --color5:   ;
+    --color6:   ;
+    --color7:   ;
+
+}
+
+/* html */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+    width: fit-content;
+}
+
+/* ................header................. */
+header {
+    color: white;
+    background-image: url(/src/img/hero-image.jpg);
+    background-size: cover;
+    display:flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 70vh, fit-content;
+}
+#introduction {
+    width:60%;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: grid;
+    grid-template-rows:  1fr 2fr;
+    text-align: center;
+    gap: 1rem;
+}
+h1 {
+    padding:15px;
+}
+.about-me {
+    padding: 25px;
+}
+img {width:80%}
+
+.profile-pic {
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#profile-pic {
+    border: 5px solid var(--color1);
+    align-self: center; 
+} 
+
+
+/* navigator */
+nav {
+    border: 5px solid var(--color1);
+}
+nav ul {
+    display: flex;
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+}
+nav ul li {
+    flex: auto;
+    padding: 1.5%;
+}
+nav ul li:hover {
+    background-color: var(--color2) ;
+}
+nav a {
+    text-decoration: none;
+    color: white
+}
+
+
+
+
+/* heading */
+
+/* about-me */
+
+/* profile-picture */
+
+/* -----------------End---------------------- */
+
+
+/* ................main................... */
+.main {
+    width: 100%;
+    height: fit-content;
+    padding: 5%;
+    background-color: rgb(145, 183, 183);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:    1fr 1fr 1fr ;
+    gap: 1rem;
+}
+
+#profile {
+    grid-column: 1/4;
+}
+#education {
+    grid-column:4/6;
+}
+#experience{
+    grid-column: 1/4 ;
+}
+#skills {
+    grid-column: 4/6;
+    grid-row: 2/4
+}
+#interests {
+    grid-column: 1/4;
+    grid-row: 3/4
+}
+.main ul {
+    margin-left: 25px;
+}
+.main-boxes {
+    border-radius: 10px;
+    border: 1px solid var(--color2);
+    background-color: azure;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    height:fit-content
+    
+}
+.main-boxes h2, h3, p, ul {
+    padding: 5px;
+}
+.main h2 {
+    color: rgb(0, 0, 0);
+    background-color: var(--color3);
+    border-radius: 7px;
+}
+
+/* -----------------End----------------------- */
+
+
+/*.................foot................... */
+.foot {
+    background-image: url(/src/img/footer-image.jpeg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+}
+
+
+/* Contacts */
+#contacts {
+    
+    border: 2px solid var(--color2);
+    margin: 10px;
+    padding: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--color3);
+    border-radius: 10px;
+    height: fit-content;
+    
+}
+
+a {
+    text-decoration: none;
+}
+.formal-communication svg {
+    width: 1.2rem;
+    vertical-align: middle; 
+}
+.social-communication svg {
+    width: 2rem;
+}
+
+
+.icons {
+    padding:5px;
+    list-style: none;
+    
+}
+.social-communication {
+    display:flex;
+    justify-content: space-around;
+}
+#facebook-icon:hover {fill: blue}
+#instagram-icon:hover  {fill: rgb(243, 138, 156)}
+#twitter-icon:hover {fill: blue}    
+#whatsapp-icon:hover {fill:green}  
+
+/* form */
+form h2 {
+    text-align: center;
+}
+.contact-form {
+    width: 90%;
+    height: fit-content;
+
+}
+form {
+    background-color: var(--color3);
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid var(--color2);
+    margin: 5%;
+    padding: 5px;
+    border-radius: 10px;
+}
+input, label, textarea, select {
+    width: 90%;
+    margin:5px;
+    padding-top: 5px;
+    padding-bottom: px;
+}
+#submit {
+    background-color: var(--color3);
+}  
+/* ----------------End--------------------- */
+
+@media screen and (max-width:700px) {
+    body {box-sizing: border-box;
+    width: fit-content}
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .introduction {
+        width:100%;
+        margin: 5%;
+        padding: 0px;
+
+
+    }
+    nav{
+        /* display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ; */
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .foot {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+
