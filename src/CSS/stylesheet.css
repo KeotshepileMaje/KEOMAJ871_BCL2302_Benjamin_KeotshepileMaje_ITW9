@@ -2,11 +2,7 @@
     --color1: rgb(25, 28, 37);
     --color2: rgb(43, 43, 43);
     --color3: rgb(145, 183, 183);
-    --color4: azure ;
-    --color5:   ;
-    --color6:   ;
-    --color7:   ;
-
+    --color4: azure;
 }
 
 /* html */
@@ -82,18 +78,7 @@ nav a {
     text-decoration: none;
     color: white
 }
-
-
-
-
-/* heading */
-
-/* about-me */
-
-/* profile-picture */
-
 /* -----------------End---------------------- */
-
 
 /* ................main................... */
 .main {
@@ -148,7 +133,6 @@ nav a {
 
 /* -----------------End----------------------- */
 
-
 /*.................foot................... */
 .foot {
     background-image: url(/src/img/footer-image.jpeg);
@@ -157,8 +141,6 @@ nav a {
     grid-template-columns: 1fr 1fr;
     padding: 5%;
 }
-
-
 /* Contacts */
 #contacts {
     
@@ -285,7 +267,6 @@ input, textarea, select {
         display: flex;
         flex-direction: column;
     }
-
 }
 /* Tablet-screenview */
 @media screen and (min-width:651px) and (max-width:1000px) {
