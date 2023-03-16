@@ -11,10 +11,14 @@
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    font-size: 1rem;
 }
 body {
     background-color: antiquewhite;
     width: fit-content;
+}
+.quick-message {
+    background-color: rgb(172, 26, 26);
 }
 
 /* ................header................. */
@@ -27,8 +31,9 @@ header {
     width: 100%;
     height: 70vh, fit-content;
 }
+
 #introduction {
-    width:60%;
+    width:60%; /*takes 60% of the total header width*/
     padding-top: 15%;
     padding-bottom: 5%;
     padding-left: 2%;
@@ -45,14 +50,13 @@ h1 {
     padding: 25px;
 }
 .profile-pic {
-    width:40%;
+    width:40%; /*takes 40% of the total header width*/
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 #profile-pic {
-    border: 5px solid var(--color1);
-    align-self: center;
+    border: 5px solid var(--color1); 
     width: 80%; 
 } 
 
@@ -98,6 +102,14 @@ nav a {
 #education {
     grid-column:4/6;
 }
+#education a {
+    text-decoration: none;
+    color: black;
+}
+#education a:hover {
+    text-decoration: none;
+    color: rgb(0, 30, 255);
+}
 #experience{
     grid-column: 1/4 ;
 }
@@ -137,7 +149,7 @@ nav a {
 .foot {
     background-image: url(/src/img/footer-image.jpeg);
     background-size: cover;
-    display: grid;
+    display: grid; /*the contacts and form placed side ways*/
     grid-template-columns: 1fr 1fr;
     padding: 5%;
 }
@@ -156,11 +168,11 @@ nav a {
     height: fit-content;  
 }
 
-a {
+.foot a {
     text-decoration: none;
     color: black;
 }
-a:hover {
+.foot a:hover {
     color:aliceblue;
 }
 form a {
@@ -178,13 +190,19 @@ form a {
     list-style: none;   
 }
 .social-communication {
-    display:flex;
+    display:flex; /*Places the social network icons in a row*/
     justify-content: space-around;
 }
+/*Changes the color of the icons*/
+#email-icon:hover {fill: white}  
+#phone-icon:hover {fill:blue}
+#message-icon:hover {fill: blue}
+#linkedin-icon:hover {fill:blue}
+#github-icon:hover {fill:purple}
 #facebook-icon:hover {fill: blue}
 #instagram-icon:hover  {fill: rgb(243, 138, 156)}
 #twitter-icon:hover {fill: blue}    
-#whatsapp-icon:hover {fill:green}  
+#whatsapp-icon:hover {fill:green} 
 
 /* form */
 form h2 {
