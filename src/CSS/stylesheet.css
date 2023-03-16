@@ -2,7 +2,7 @@
     --color1: rgb(25, 28, 37);
     --color2: rgb(43, 43, 43);
     --color3: rgb(145, 183, 183);
-    --color4:   ;
+    --color4: azure ;
     --color5:   ;
     --color6:   ;
     --color7:   ;
@@ -48,8 +48,6 @@ h1 {
 .about-me {
     padding: 25px;
 }
-img {width:80%}
-
 .profile-pic {
     width:40%;
     display: flex;
@@ -58,7 +56,8 @@ img {width:80%}
 }
 #profile-pic {
     border: 5px solid var(--color1);
-    align-self: center; 
+    align-self: center;
+    width: 80%; 
 } 
 
 
@@ -72,11 +71,11 @@ nav ul {
     padding: 0px;
     list-style: none;
 }
-nav ul li {
+nav a {
     flex: auto;
     padding: 1.5%;
 }
-nav ul li:hover {
+nav a:hover {
     background-color: var(--color2) ;
 }
 nav a {
@@ -101,7 +100,7 @@ nav a {
     width: 100%;
     height: fit-content;
     padding: 5%;
-    background-color: rgb(145, 183, 183);
+    background-color: var(--color3);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows:    1fr 1fr 1fr ;
@@ -131,7 +130,7 @@ nav a {
 .main-boxes {
     border-radius: 10px;
     border: 1px solid var(--color2);
-    background-color: azure;
+    background-color: var(--color4);
     padding: 5%;
     display:flex;
     flex-direction: column;
@@ -172,12 +171,18 @@ nav a {
     gap: 10px;
     background-color: var(--color3);
     border-radius: 10px;
-    height: fit-content;
-    
+    height: fit-content;  
 }
 
 a {
     text-decoration: none;
+    color: black;
+}
+a:hover {
+    color:aliceblue;
+}
+form a {
+    color:aqua;
 }
 .formal-communication svg {
     width: 1.2rem;
@@ -186,12 +191,9 @@ a {
 .social-communication svg {
     width: 2rem;
 }
-
-
 .icons {
     padding:5px;
-    list-style: none;
-    
+    list-style: none;   
 }
 .social-communication {
     display:flex;
@@ -209,7 +211,6 @@ form h2 {
 .contact-form {
     width: 90%;
     height: fit-content;
-
 }
 form {
     background-color: var(--color3);
@@ -225,34 +226,56 @@ input, label, textarea, select {
     margin:5px;
     padding-top: 5px;
     padding-bottom: px;
+    border-radius: 4px;
+    padding-left: 5px;
 }
+input, textarea, select {
+    background-color: var(--color4);
+}
+
 #submit {
     background-color: var(--color3);
 }  
 /* ----------------End--------------------- */
 
-@media screen and (max-width:700px) {
+/* Phone-screenview */
+@media screen and (max-width:650px) {
+
     body {box-sizing: border-box;
-    width: fit-content}
+    width: fit-content;
+    font-size: 0.95rem}
+    h1 {
+        font-size: 2rem;
+    }
     header {
+        width:100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .introduction {
+    #introduction {
         width:100%;
-        margin: 5%;
-        padding: 0px;
-
-
+        padding:5%;
     }
-    nav{
-        background-color: rgb(69, 66, 61);
+    nav ul{
         display:flex;
         flex-direction: column;
-        /* display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr ; */
+        gap: 2%;
+    }
+    
+    nav a {
+        flex: auto;
+        padding: 1%;
+    }
+    
+    .profile-pic {
+        width:100%;
+        padding: 5%;
+    }
+    #profile-pic {
+        border: 5px solid var(--color1);
+        align-self: center;
+        width: 80%;  
     }
     .main{
         display: flex;
@@ -262,6 +285,44 @@ input, label, textarea, select {
         display: flex;
         flex-direction: column;
     }
+
+}
+/* Tablet-screenview */
+@media screen and (min-width:651px) and (max-width:1000px) {
+
+    body {box-sizing: border-box;
+    width: fit-content;
+    font-size: 0.95rem}
+    h1 {
+        font-size: 2rem;
+    }
+    header {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #introduction {
+        width:100%;
+        padding:5%;
+    }
+    .profile-pic {
+        width:100%;
+        padding: 5%;
+    }
+    #profile-pic {
+        border: 5px solid var(--color1);
+        align-self: center;
+        width: 70%;  
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .foot {
+        display: flex;
+        flex-direction: column;
+    }   
 }
 
 
